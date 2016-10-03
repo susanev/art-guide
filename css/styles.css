@@ -1,0 +1,981 @@
+/*tags*/
+* {
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Open Sans', sans-serif;
+    width: 940px;
+    /* center */
+    margin: 0 auto;
+    background-color: #F7F7F7;
+}
+
+h1 {
+    font-size: 36px;
+    font-weight: 700;
+    color: #545454;
+    margin: 30px 0 30px 0;
+    padding: 20px 0 0 0;
+}
+
+h2 {
+    font-size: 26px;
+    
+}
+
+h3 {
+    font-size: 19px;
+    font-weight: 700;
+    padding-bottom: 5px;
+    
+}
+
+p {
+   font-size: 14px;
+    line-height: 18px;
+    color:#333333;
+    
+}
+
+a {
+    color:#00A8d0;
+    font-size: 14px;
+    text-decoration: none;
+}
+
+.northwest-desktop, .northwest-mobile {
+    padding: 0 0 10px 0;
+}
+
+.northwest-desktop {
+    min-height: 475px;
+}
+
+.clear {
+    clear: both;
+}
+
+/* navigation */
+
+#main-nav, .secondary-nav {
+    margin: 0 auto;  
+}
+
+#main-nav li a, .secondary-nav li a {
+    display: block;
+    text-align: center;
+    text-decoration: none;
+}
+
+#main-nav {
+    width: 720px;
+    float: right;
+    height: 90px;
+    background-color: #00A8D0;
+}
+
+#main-nav li {
+    float: left;
+    width: 25%; 
+    background-color: #00A8D0;  
+}
+
+#main-nav li a {
+    height: 90px;
+    color: #727373;
+    font-size: 18px;
+    margin: 0;
+    padding: 15px 16px;
+    color: #F7F7F7;
+}
+
+#main-nav li:hover {
+    background-color: #727373;
+    
+}
+
+.secondary-nav {
+    padding-top: 10px;
+    height: 35px;
+    background-color: #cccccc;
+}
+
+.secondary-nav  li{
+    float: right;
+    padding-right: 10px;
+}
+
+.secondary-nav li a, .footer-links a {
+    color: #333333;
+    font-size: 14px;
+    padding-right: 5px;
+}
+
+.footer-social {
+    margin: 10px 10px 0 0;
+}
+
+.footer-social img {
+    margin-left: 5px;
+}
+
+.secondary-nav li a:hover {
+    font-weight: 700;
+}
+
+.add-button {
+    position:absolute;
+    top: 0px;  
+    right: 0px;
+}
+
+.add-button:hover {
+    background-color: #858786;
+}
+
+.event .card {
+    position: relative;
+}
+
+
+.add-button {
+    padding: 5px 6px;
+    float: right;
+    background-color: #00a8d0;
+}
+.event-date{
+    padding: 9px 9px;
+    background-color: #F1592B;
+    float: left;
+    min-width: 102px;
+}
+
+.add-button p {
+    text-align: left;
+    font-size: 10px;
+    line-height: 12px;
+}
+
+.add-button img {
+    margin: 0 0 2px 8px;
+    width: 33px;
+}
+
+.add-button p, .event-date p {
+    color: #fff;
+}
+
+.event-date p {
+    font-size: 16px;  
+    letter-spacing: 1.1px;
+    text-align: left;
+    line-height: 21px;
+}
+.event-info{
+    clear: both;
+    padding: 10px 10px 0 10px;  
+}
+.event-img{
+    width:100%;
+}
+
+.event-info h3 {
+    line-height: 24px;
+}
+
+
+.footer-nav {
+    width: 560px;
+    margin: 0 auto;
+    padding-bottom: 30px;  
+    margin-top: 10px;
+}
+
+.footer-nav li{
+    float:left;
+    width: 150px;
+    
+    
+}
+
+.footer-nav li a{
+    display: block;
+    text-align: center;
+    text-decoration:none;
+    font-size: 16px;
+    
+    
+}
+
+.footer-nav li a:hover {
+    color: #727373; 
+}
+
+
+footer {
+    clear: both;
+    background-color: #cccccc;
+    padding:15px;
+    margin-top: 75px;
+}
+
+.footer-nav .last, .footer-nav .last a{
+    width: 110px;
+}
+
+.footer-links {
+    float: right;
+}
+
+.social-icon {
+    float: right;
+}
+
+
+.card {
+    margin-bottom: 0px;
+    padding-bottom: 20px;
+    background-color: #fff;
+    box-shadow: 0 2px 5px 0 rgba(0, 0, 0, 0.26);
+}
+
+.upcoming .card {
+    margin-bottom: 30px;
+}
+
+.culture-text {
+    padding: 10px 15px 0 15px;
+}
+
+
+.culture-text p {
+    line-height: 21px;
+}
+
+.read-more {
+    padding-left: 4px;
+}
+
+
+.more-button, .button {
+    display: inline-block;
+    position: relative;
+    width: 120px;
+    height: 45px;
+    line-height: 32px;
+    font-size: 0.9em;
+    background-color: #F1592B;
+    border: none;
+    color: #fff;
+    float: right;
+}
+
+.more-button {
+    background-color: #00A0C7;
+    width: 197px;
+    height: 43px;
+    padding: 5px 10px;
+    margin: 20px 1px 0 0;
+}
+
+a .more-button {
+    font-size: 14px;
+}
+
+.logo-footer {
+    height: 120px;
+    width: 140px;
+    float: left;
+}
+
+/*structural divs*/
+.row {
+    min-width: 768px;
+    max-width: 940px;
+    clear: both;
+}
+
+.whole {
+    width: 100%;
+}
+
+.third, .third-last {
+    float: left;
+    width: 31%;
+}
+
+.third {
+    margin-right: 3.5%;
+}
+
+.third_last {
+    margin-right: 0;
+}
+
+.two-thirds {
+    float: left;
+    width: 65%;
+    margin-right: 0;
+}
+
+.tablet-only {
+    display: none;
+}
+
+
+
+
+/* logos */
+.logo {
+    width: 20%;   
+    margin-top: 8px;
+    float: left;
+    margin-left: 15px;
+}
+
+.hide-text {
+    text-indent: 100%; 
+    white-space: nowrap; 
+    overflow: hidden;
+}
+
+.logo h1 {
+    background-image: url("../img/logos/desktop.svg");
+    background-repeat: no-repeat;
+    height: 140px;
+    background-size: 85%;
+    margin: 0;
+}
+
+footer .logo h1 {
+    background-size: 100%; 
+    margin: 0;
+    float: left;
+    padding: 0;
+    height: 70px;
+}
+
+footer .hide-text {
+    width: 100px;
+}
+
+/* icons */
+.social-icon {
+    width: 25px;
+}
+
+/*images*/
+.culture-img {
+    max-width: 100%;
+    width: 100%;
+    height: auto;
+}
+
+
+.first-link {
+    padding-right: 30px;
+}
+
+.event-search {
+    float: right;
+    width: 76.5%;
+}
+
+.event-search-box, .event-search-button {
+    height: 50px;
+}
+
+.event-search-box {
+    width: 80%;
+    border: none;
+   /* box-shadow: 0 2px 5px 0 rgba(0, 0, 0, 0.26);*/
+}
+
+.event-search-button {
+    padding: 0;
+    width: 20%
+}
+
+
+.northwest-mobile {
+    display: none;
+}
+
+
+
+.head-links {
+    text-align: right;
+    margin-top: 15px;
+}
+
+.head-links a {
+    margin-left: 15px;
+    font-size: 14px;
+}
+
+.social {
+    float: right;
+    position: relative;
+    top: -4px;
+    margin-right: 15px;
+}
+
+.social a img {
+    margin-left: 4px;
+}
+
+.community h2 {
+    color: #fff;
+    padding: 15px 20px 0 20px;
+    font-size: 23px;
+}
+
+.community .event-info .event-d {
+    font-size: 13px; 
+    color: #fff;
+    font-weight: 400; 
+    margin:0 0 0 10px; 
+    padding-bottom: 10px;
+}
+
+.community {
+    background-color: rgba(241, 89, 43, 1);
+    min-height: 100px;
+}
+
+.directories .card {
+    padding-bottom: 0;
+}
+
+.taglines {
+    margin: 99px 0 0 50px;
+    font-weigt: 300;
+    font-style: italic;
+    width: 500px;
+    
+}
+
+.taglines p {
+    font-size: 16px;
+    line-height: 24px;
+    color: #727373;
+}
+
+.event-p, .directory-p {
+    text-align: justify;
+    text-justify: distribute;
+}
+
+.event-p, .spotlight-p {
+    font-size: 13px;
+    line-height: 18px;  
+    margin-top: 10px;
+}
+
+.event-p {
+    min-height: 110px;
+}
+
+.spotlight-p {
+    min-height: 36px;
+    margin: 10px 0 8px 0;
+}
+
+
+.directory-p {
+    padding: 10px 10px 0 10px;
+    line-height: 21px;
+}
+
+.box-shadow-menu {
+    display: none;
+}
+
+.directory-p {
+    min-height: 175px;
+}
+
+.search-museums {
+    color: #737373;
+} 
+
+.search-galleries {
+    color: #00A0C7;
+}
+
+.search-artists {
+    color: #00A0C7;
+}
+
+.search-now {
+    float: right;
+    margin: 10px 10px 0 0;
+}
+
+.culture-left-p {
+    min-height: 70px;
+    width: 32%;
+    padding-right: 10px;
+    margin-right: 3%;
+    border-right: 1px #CCCCCC solid;
+}
+
+input:focus{
+    outline: none;
+}
+
+input {
+    color: #a8a8a8;
+    font-size: 14px;
+    font-weight: 300;
+    letter-spacing: 1.3px;
+    padding: 0 10px;
+}
+
+.border {
+    height: 50px;
+    margin: 20px 0;
+    border-right: 1px #F7F7F7 solid;
+}
+
+.last-item {
+    border-right: none;
+}
+
+.event-d {
+    color: #000;
+    letter-spacing: 0.5px;
+    font-weight: 700;
+    line-height: 21px;
+}
+
+.featured-museum {
+    background-image: url('../img/featured-museums/burke-desktop.jpg');
+    height: 220px;  
+    background-size:cover;
+}
+
+.featured-gallery {
+    
+    background-image: url('../img/featured-galleries/foster-white-desktop.jpg');
+    height: 220px;
+    background-size:cover;
+        
+}
+
+.featured-artist {
+    
+    background-image: url('../img/featured-artists/weiwei-desktop.jpg');
+    height: 220px;
+    background-size:cover;      
+}
+
+.button-upcoming {
+    width: 205px;
+}
+
+
+@media screen and (max-width:940px) {    
+    body {
+        width: 100%;
+        margin: 0;
+    }
+    
+    section {
+        margin: 0 30px;
+    }
+
+    .row {
+        min-width: 580px;
+        max-width: 940px;
+        clear: both;
+    }
+
+    .northwest-desktop {
+        display: none;
+    }
+    
+    .northwest-mobile {
+        display: block;
+    }
+
+    .event-search-box {
+        width: 75%;
+    }
+
+    .tablet-half, .tablet-half-last {
+        width: 48%;
+        margin: 0 4% 30px 0;
+    }
+
+    .tablet-half-last {
+        margin-right: 0;
+    }
+
+    .tablet-whole {
+        width: 100%;
+    }
+
+    .event-img, .directory-img {
+        width: 100%;
+    }
+
+    .tablet-only {
+        display: block;
+        float: left;
+    }
+
+    .logo h1{
+        height: 110px;
+    }
+        
+    .logo h1 {
+        background-image: url("../img/logos/tablet.svg");
+        background-size: cover;
+        margin-left: 10px;
+    }
+
+    .hide-text {
+        width: 120px;
+        margin-right: 0;
+    }
+
+    .event {
+        height: 50%;
+    }
+
+    .add-button {
+        width: 95px;
+    }
+
+    .event-info {
+        top: -100px;
+    }
+
+    .add-button img {
+        width: 70px;
+    }
+
+    .add-button p {
+        text-align: center;
+    }
+
+    .galleries, .museums, .artists {
+        height: 85%;
+    }
+
+    .directory-heading h2{
+        margin-top: 41%;
+    }
+
+    footer {
+        width: 89%;
+    }
+
+    footer .logo h1 {
+        background-size: 90%; 
+        margin: 0;
+        float: left;
+    }
+
+    .secondary-nav {
+        width: 100%;
+        margin: 0;
+    }
+    
+    #main-nav {
+        width: 75%;
+        height: 75px;
+    }
+    
+    #main-nav ul li {
+        height: 75px;
+    }
+    
+    #main-nav ul li a {
+        height: 75px;
+        padding: 14px 0;
+        font-size: 16px;
+        margin: 0;
+    }
+    
+    .event-search {
+        width: 75%;
+        margin-bottom: 25px;
+    }
+    
+    .event-search-box {
+        width: 75%;
+    }
+    
+    .event-search-button {
+        width: 25%;
+    }
+    
+    .event-p {
+        min-height: 110px;
+    }
+
+/*
+    .event-info h3 {
+        min-height: 55px;
+    }
+*/
+
+    .culture-left-p {
+        min-height: 70px;
+    }
+
+    .border {
+        height: 40px;
+        margin: 15px 0;
+        border-right: 1px #F7F7F7 solid;
+    }
+
+    .last-item {
+        border-right: none;
+    }
+    
+    .featured-museum, .featured-gallery, .featured-artist {
+        height: 300px;
+        background-position: center;
+    }
+    
+    
+    
+    .featured-museum {
+        background-image: url('../img/featured-museums/burke-tablet.jpg');     
+    }
+
+    .featured-gallery {
+        background-image: url('../img/featured-galleries/foster-white-tablet.jpg');
+    }
+
+    .featured-artist {
+        background-image: url('../img/featured-artists/weiwei-tablet.jpg');
+    }
+    
+    .more-button {
+        margin-top: 0;
+        width: 224px;
+    }
+    
+    a .more-button {
+        font-size: 16px;
+    }
+    
+    .button-upcoming {
+        width: 235px;
+    }
+}
+
+@media screen and (max-width:780px) {
+    .culture-left-p, .culture-right-p {
+        width: 100%;
+        border-right: none;
+        margin-bottom: 10px;
+        min-height: 0;
+    }
+}
+
+@media screen and (max-width:620px) {
+    .row {
+        min-width: 320px;
+        max-width: 620px;
+        clear: both;
+    }
+
+    .event-search-box {
+        width: 68%;
+    }
+
+    .event-info {
+        padding-bottom: 10px;
+    }
+
+    .event-info h3, .culture-text h3 {
+        font-size: 22px;
+        line-height: 30px;
+    }
+
+    p, .directories a, .northwest-mobile a {
+        font-size: 18px;
+        line-height: 38px;
+        text-align: justify;
+        text-justify: distribute;
+    }
+
+    section {
+        margin: 0 10px;
+    }
+    
+    .northwest-mobile a {
+        margin: 0;
+        padding: 0;
+        line-height: 24px;
+    }
+
+    .directory-p, .event-info p {
+        line-height: 26px;
+    }
+
+    .whole, .third, .third-last {
+        width: 100%;
+    }
+
+    .event .card {
+        height: auto;
+        margin-bottom: 30px;
+    }
+    
+    .card {
+        padding-bottom: 10px;
+    }
+
+    .event-p {
+        display: none;
+    }
+
+    .directory-heading, .directory-heading h2 {
+        margin-top: 0;
+    }
+
+    footer {
+        width: 78%;
+    }
+
+    .footer-nav {
+        width: 100%;
+        height: 130px;
+    }
+
+    .footer-nav .last, .footer-nav .last a {
+        width: 100%;
+    }
+
+    .footer-nav ul li {
+        width: 100%;
+        margin-bottom: 15px;
+    }
+
+    .tablet-only {
+        display: none;
+    }
+        
+    .logo h1 {
+        background-image: url("../img/logos/phone.svg");
+    }
+     
+    .secondary-nav {
+        display: none;
+    }
+    
+    #main-nav {
+        height: 240px;
+        display: none;
+        width: 100%;
+    }
+    
+    #main-nav ul li {
+        width: 100%;
+        height: 60px;
+        border-bottom: 1px #fff solid;
+    }
+    
+    #main-nav ul li a {
+        padding: 5px 0;
+        border: none;
+    }
+    
+    .event-search {
+        clear: both;
+        float: none;
+        width: 100%;
+        margin: 0 25px;
+    }
+    
+    .event-search-box {
+        width: 90%;
+        margin-top: 25px;
+    }
+    
+    .event-search-button {
+        display: none;
+    }
+    
+    header .logo {
+        margin: 0 auto;
+        margin-top: 20px;
+        margin-bottom: 20px;
+        clear: both;
+        float: none;
+        background-size: cover;
+        width: 120px;
+    }
+
+    .logo {
+        width: 30%;
+    }
+    
+    .logo h1 {
+        margin-bottom: 0;
+        margin-left: 0;
+      
+    }
+    
+    .box-shadow-menu {
+        display: block;
+        position: relative;
+        padding-left: 1.25em;
+        margin: 10px 30px 10px 0;
+        font-size: 24px;
+        float: right;
+        color: #545454;
+    }
+    .box-shadow-menu:before {
+      content: "";
+      position: absolute;
+      left: 0;
+      top: 0.1em;
+      width: 1em;
+      height: 0.15em;
+      background: #545454;
+      box-shadow: 
+        0 0.3em 0 0 #545454,
+        0 0.6em 0 0 #545454;
+    }
+    
+    .featured-museum, .featured-gallery, .featured-artist {
+
+    }
+    
+    .featured-museum {
+        background-image: url('../img/featured-museums/burke-phone.jpg');   
+    }
+
+    .featured-gallery {
+        background-image: url('../img/featured-galleries/foster-white-phone.jpg');
+    }
+
+    .featured-artist {
+        background-image: url('../img/featured-artists/weiwei-phone.jpg');
+    }
+    
+    .community h2 {
+        font-size: 27px;
+    }
+    
+    .community .event-info .event-d {
+        font-size: 16px;
+        line-height: 20px;
+    }
+    
+    .directories .card {
+    }
+    
+    footer .logo h1 {
+        height: 80px;
+        width: 75px;
+    }
+}

@@ -1,0 +1,52 @@
+body {
+	width: 940px;
+	margin: 50px auto;
+	padding: 0 50px;
+	font-family: 'Open Sans', sans-serif;
+    min-width: 768px;
+	max-width: 940px;
+}
+
+img {
+    width: 100%;
+}
+
+h2 {
+	font-size: 24px;
+	margin-bottom: 30px;
+	color: #909090;
+}
+
+.hide-text {
+	height: 210px;
+	text-indent: 100%; 
+	white-space: nowrap; 
+	overflow: hidden;
+}
+
+.logo-v1 {
+	background-image: url("../img/desktop.png");
+	background-repeat: no-repeat;
+}
+
+@media screen and (max-width:939px) {
+	body {
+		width: 100%;
+	}
+
+
+	.logo-v1 {
+		background-image: url("../img/tablet.png");
+	}
+}
+
+@media screen and (max-width:600px) {
+    
+    .style_tile {
+        display: none;
+    }
+    
+	.logo-v1 {
+		background-image: url("../img/mobile.png");
+	}
+}

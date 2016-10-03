@@ -1,0 +1,201 @@
+<!doctype html>
+<html>
+    <head>
+        <meta charset="UTF-8">
+        <title>ArtGuide Northwest</title>
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <link href='https://fonts.googleapis.com/css?family=Open+Sans:400,300,700' rel='stylesheet' type='text/css'>
+        <link rel="stylesheet" type="text/css" href="css/reset.css">
+        <link rel="stylesheet" type="text/css" href="css/styles.css">
+        
+        <link rel="shortcut icon" href="img/favicon.ico" type="image/x-icon">
+        <link rel="icon" href="img/favicon.ico" type="image/x-icon">
+
+        <script type="text/javascript" src="js/random_imgs.js"></script>
+        <script type="text/javascript" src="js/basic.js"></script>
+    </head>
+
+    <body>
+        <header class="row">
+            <nav class="secondary-nav">
+                <div class= "social">
+                    <a href="#"><img class="social-icon" src="img/icons/twitter-icon.svg" alt="twitter"/></a>
+                    <a href="#"><img class="social-icon" src="img/icons/fb-icon.svg" alt="facebook"/></a>
+                </div>
+
+                <ul>
+                    <li><a href="#">Contact Us</a></li>         
+                    <li><a href="#">Login</a><li>        
+                </ul>
+            </nav>
+
+            <div class="logo">
+                <a href="index.html"><h1 class="hide-text">Art Guide Northwest</h1></a>
+            </div>
+            
+            <div class="box-shadow-menu" onclick="showMenu(this)" >Menu</div>
+
+            <nav id="main-nav">
+                <ul>
+                    <li><div class="border"><a href="art-events.html">Art Events</a></div></li>
+                    <li><div class="border"><a href="#">Directories</a></div></li>
+                    <li><div class="border"><a href="#">Art Maps</a></div></li>
+                    <li><div class="border last-item"><a class="last-item" href="#">Blog</a></div></li>
+                </ul>
+            </nav>
+
+            <form class="event-search">
+                <input class="event-search-box" value="What do you want to discover today?" type="text" onfocus="inputFocus(this)" onblur="inputBlur(this)"/>
+                <button class="event-search-button button text-search" type="submit">Event Search</button>
+            </form> 
+            
+            <div class="clear"></div>
+        </header>
+
+         <div class="clear"></div>
+    
+        <section class="row">
+            <div class="whole">
+                <h1>Northwest Art Culture</h1>
+                <div class="northwest-desktop card">
+                    <script type="text/javascript">getRandomImage(random_images_array_desktop, random_text_array, random_paragraph_array_1, random_paragraph_array_2, "img/northwest-art-culture/");</script>
+                </div>
+                
+                <div class="northwest-mobile card">
+                    <script type="text/javascript">getRandomImage(random_images_array_mobile, random_text_array, random_paragraph_array_1, random_paragraph_array_2, "img/northwest-art-culture/");</script>
+                </div>
+            </div>
+        </section>
+    
+
+        <section div class="row event">
+            <h1>Featured Events</h1>
+            <a href="#"><div class="third tablet-half card">
+                <img class="event-img" src="img/featured-events/a-new-republic.jpg" alt="Painting of black man in military coat by Kehinde Wiley"/>
+
+                <a href="#"><div class="add-button">
+                     <img src="img/icons/event-add-icon.svg" alt="add icon"/>            
+                    <p>Add to list</p>
+                </div></a>
+
+                <div class="event-info">
+                    <h3 class="event-d">A New Republic</h3>
+                    <p class="event-d">February 11th - May 8th<br/><a href="#">Seattle Art Museum</a></p>
+                    <p class="event-p">Kehinde Wiley, an American artist, whose work is highly stylized, and draws attention to the dialectic between a history of aristocratic representation and the portrait, as a statement of power and the individual’s sense of empowerment.</p>
+                </div>
+            </div><a href="#">
+            
+            <a href="#"><div class="third card tablet-half-last">
+                <img class="event-img" src="img/featured-events/bling-it-on.jpg" alt="Framed artwork in gallery"/>
+
+                <a href="#"><div class="add-button">
+                     <img src="img/icons/event-add-icon.svg" alt="add icon"/>            
+                    <p>Add to list</p>
+                </div></a>
+
+                <div class="event-info">
+                    <h3 class="event-d">Bling it On!</h3>
+                    <p class="event-d">January 13th - February 20th<br/>Seattle, <a href="#">CoCA at Rubix</a></p>
+                    <p class="event-p">Amazing contemporary wearable art, jewelry for everyday wear, as well as one-of-a-kind pieces that will get compliments every time you wear it.</p>
+                </div>
+            </div></a>
+        
+           <a href="#"><div class="third-last tablet-half card">
+                <img class="event-img" src="img/featured-events/power-of-architecture.jpg" alt="Man painting"/>
+
+                <a href="#"><div class="add-button">
+                     <img src="img/icons/event-add-icon.svg" alt="add icon"/>            
+                    <p>Add to list</p>
+                </div></a>
+
+                <div class="event-info">
+                    <h3 class="event-d">The Power of Architecture</h3>
+                    <p class="event-d">January 29th - May 1st<br/><a href="#">Bellevue Arts Museum</a></p>
+                    <p class="event-p">American architect Louis Kahn (1901–1974) is regarded as a master builder of the 20th century. With complex spatial compositions and a choreographic mastery of light, Kahn created buildings of beauty and universal symbolism.</p>
+                </div>
+            </div></a>
+
+            <a href="#"><div class="tablet-only tablet-half-last card">
+                <img class="event-img" src="img/featured-events/young-blood.jpg" alt="Leavnworth park"/>
+
+                <a href="#"><div class="add-button">
+                     <img src="img/icons/event-add-icon.svg" alt="add icon"/>            
+                    <p>Add to list</p>
+                </div></a>
+
+                <div class="event-info">
+                    <h3 class="event-d">Young Blood</h3>
+                    <p class="event-d">April 16th - June 5th<br/><a href="#">Frye Museum</a></p>
+                    <p class="event-p">Celebrating the life of artist, and visionary Noah Davis (1983–2015) in conversation with, his brother, artist Kahlil Joseph. Highlighting the notion of narrative through storytelling including painting, sculpture, film, and installation.</p>
+                </div>
+            </div></a>
+            
+            <a href="#"><div class="more-button">View more featured events</div></a>
+        </section>
+    
+        <div class="clear"></div>
+        <section class="row directories">
+            <h1>Community Spotlight</h1>
+            <a href="#"><div class="third tablet-half card">
+                <div class="community">
+                    <h2>Burke Museum</h2>                
+                    <div class="event-info">
+                        <p class="event-d">Open Daily 10AM-5PM<br />Admission $0 - $10</p>
+                    </div>
+                </div> 
+                <div class= "featured-museum"></div>
+            </div></a>
+        
+            <a href="#"><div class="third tablet-half-last card">
+                <div class="community">
+                    <h2>Foster/White Gallery</h2>
+                    <div class="event-info">
+                        <p class="event-d">Open Tuesday-Saturday 10AM-6PM<br />Admission Free</p>
+                    </div>
+                </div>  
+                <div class= "featured-gallery"></div>
+            </div></a>
+
+            <a href="#"><div class="third-last tablet-whole card">
+                <div class="community">
+                    <h2>Ai WeiWei</h2>
+                    <div class="event-info">
+                        <p class="event-d">Chinese contemporary artist, showing at San Juan Islands Museum of Art</p>
+                    </div>
+                </div>
+                <div class= "featured-artist"></div>
+            </div></a>
+        </section>
+
+        <div class="clear"></div>
+
+        <footer class="row whole">
+            <div>
+                <div class="logo">
+                    <a href="index.html"><h1 class="hide-text">Art Guide Northwest</h1></a>
+                </div>
+                
+                <div class="footer-links">
+                    <a href="#">Login</a>
+                    <a href="#">Contact Us</a>
+
+                    <div class="footer-social">
+                        <a href="#"><img class="social-icon" src="img/icons/twitter-icon.svg" alt="twitter"/></a>
+                        <a href="#"><img class="social-icon" src="img/icons/fb-icon.svg" alt="facebook"/></a>
+                    </div>
+                </div>
+
+                <div class="clear"></div>
+
+                <div class="footer-nav">
+                    <ul>
+                        <li><a href="art-events.html">Art Events</a></li>
+                        <li><a href="#">Directories</a></li>
+                        <li><a href="#">Art Maps</a></li>
+                        <li class="last"><a href="#">Blog</a></li>
+                    </ul>
+                </div>
+            </div>
+        </footer>
+    </body>
+</html>

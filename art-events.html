@@ -1,0 +1,282 @@
+<!doctype html>
+<html>
+   <head>
+        <meta charset="UTF-8">
+        <title>ArtGuide Northwest</title>
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <link href='https://fonts.googleapis.com/css?family=Open+Sans:400,300,700' rel='stylesheet' type='text/css'>
+        <link rel="stylesheet" type="text/css" href="css/reset.css">
+        <link rel="stylesheet" type="text/css" href="css/styles.css">
+        
+        <link rel="shortcut icon" href="img/favicon.ico" type="image/x-icon">
+        <link rel="icon" href="img/favicon.ico" type="image/x-icon">
+
+        <script type="text/javascript" src="js/random_imgs.js"></script>
+        <script type="text/javascript" src="js/basic.js"></script>
+    </head>
+
+    <body>
+        <header class="row">
+            <nav class="secondary-nav">
+                <div class= "social">
+                    <a href="#"><img class="social-icon" src="img/icons/twitter-icon.svg" alt="twitter"/></a>
+                    <a href="#"><img class="social-icon" src="img/icons/fb-icon.svg" alt="facebook"/></a>
+                </div>
+
+                <ul>
+                    <li><a href="#">Contact Us</a></li>         
+                    <li><a href="#">Login</a><li>        
+                </ul>
+            </nav>
+
+            <div class="logo">
+                <a href="index.html"><h1 class="hide-text">Art Guide Northwest</h1></a>
+            </div>
+            
+            <div class="box-shadow-menu" onclick="showMenu(this)" >Menu</div>
+
+            <nav id="main-nav">
+                <ul>
+                    <li><div class="border"><a href="art-events.html">Art Events</a></div></li>
+                    <li><div class="border"><a href="#">Directories</a></div></li>
+                    <li><div class="border"><a href="#">Art Maps</a></div></li>
+                    <li><div class="border last-item"><a class="last-item" href="#">Blog</a></div></li>
+                </ul>
+            </nav>
+
+            <form class="event-search">
+                <input class="event-search-box" value="What do you want to discover today?" type="text" onfocus="inputFocus(this)" onblur="inputBlur(this)"/>
+                <button class="event-search-button button text-search" type="submit">Event Search</button>
+            </form> 
+            
+            <div class="clear"></div>
+        </header>
+
+         <div class="clear"></div>
+	
+		 <section div class="row event">
+            <h1>Featured Events</h1>
+            <a href="#"><div class="third tablet-half card">
+                <img class="event-img" src="img/featured-events/a-new-republic.jpg" alt="Painting of black man in military coat by Kehinde Wiley"/>
+
+                <a href="#"><div class="add-button">
+                     <img src="img/icons/event-add-icon.svg" alt="add icon"/>            
+                    <p>Add to list</p>
+                </div></a>
+
+                <div class="event-info">
+                    <h3 class="event-d">A New Republic</h3>
+                    <p class="event-d">February 11th - May 8th<br/><a href="#">Seattle Art Museum</a></p>
+                    <p class="event-p">Kehinde Wiley, an American artist, whose work is highly stylized, and draws attention to the dialectic between a history of aristocratic representation and the portrait, as a statement of power and the individual’s sense of empowerment.</p>
+                </div>
+            </div><a href="#">
+            
+            <a href="#"><div class="third card tablet-half-last">
+                <img class="event-img" src="img/featured-events/bling-it-on.jpg" alt="Framed artwork in gallery"/>
+
+                <a href="#"><div class="add-button">
+                     <img src="img/icons/event-add-icon.svg" alt="add icon"/>            
+                    <p>Add to list</p>
+                </div></a>
+
+                <div class="event-info">
+                    <h3 class="event-d">Bling it On!</h3>
+                    <p class="event-d">January 13th - February 20th<br/>Seattle, <a href="#">CoCA at Rubix</a></p>
+                    <p class="event-p">Amazing contemporary wearable art, jewelry for everyday wear, as well as one-of-a-kind pieces that will get compliments every time you wear it.</p>
+                </div>
+            </div></a>
+        
+           <a href="#"><div class="third-last tablet-half card">
+                <img class="event-img" src="img/featured-events/power-of-architecture.jpg" alt="Man painting"/>
+
+                <a href="#"><div class="add-button">
+                     <img src="img/icons/event-add-icon.svg" alt="add icon"/>            
+                    <p>Add to list</p>
+                </div></a>
+
+                <div class="event-info">
+                    <h3 class="event-d">The Power of Architecture</h3>
+                    <p class="event-d">January 29th - May 1st<br/><a href="#">Bellevue Arts Museum</a></p>
+                    <p class="event-p">American architect Louis Kahn (1901–1974) is regarded as a master builder of the 20th century. With complex spatial compositions and a choreographic mastery of light, Kahn created buildings of beauty and universal symbolism.</p>
+                </div>
+            </div></a>
+
+            <a href="#"><div class="tablet-only tablet-half-last card">
+                <img class="event-img" src="img/featured-events/young-blood.jpg" alt="Leavnworth park"/>
+
+                <a href="#"><div class="add-button">
+                     <img src="img/icons/event-add-icon.svg" alt="add icon"/>            
+                    <p>Add to list</p>
+                </div></a>
+
+                <div class="event-info">
+                    <h3 class="event-d">Young Blood</h3>
+                    <p class="event-d">April 16th - June 5th<br/><a href="#">Frye Museum</a></p>
+                    <p class="event-p">Celebrating the life of artist, and visionary Noah Davis (1983–2015) in conversation with, his brother, artist Kahlil Joseph. Highlighting the notion of narrative through storytelling including painting, sculpture, film, and installation.</p>
+                </div>
+            </div></a>
+            
+            <a href="#"><div class="more-button">View more featured events</div></a>
+        </section>
+    
+        <div class="clear"></div>
+
+            
+		<section div class="row event upcoming">
+            <h1>Upcoming Events</h1>
+            
+            <a href="#"><div class="third tablet-half card">
+                <img class="event-img" src="img/upcoming-events/glass-quest.jpg" alt="Woman holding glass ball"/>
+
+                <a href="#"><div class="add-button">
+                     <img src="img/icons/event-add-icon.svg" alt="add icon"/>            
+                    <p>Add to list</p>
+                </div></a>
+
+                <div class="event-info">
+                    <h3 class="event-d">Great NW Glass Quest</h3>
+                    <p class="event-d">February 12th - 21st<br/>Stanwood and Camano Island</p>
+                    <p class="event-p">Search Stanwood and Camano Island for plastic clue balls that provide instructions on where to find unique hand-blown glass treasures by world-renwned glass artists, Mark and Marcus Ellinger.</p>
+                </div>
+            </div><a href="#">
+            
+            <a href="#"><div class="third card tablet-half-last">
+                <img class="event-img" src="img/upcoming-events/gage-art-auction.jpg" alt="Framed artwork in gallery"/>
+
+                <a href="#"><div class="add-button">
+                     <img src="img/icons/event-add-icon.svg" alt="add icon"/>            
+                    <p>Add to list</p>
+                </div></a>
+
+                <div class="event-info">
+                    <h3 class="event-d">Gage Art Auction</h3>
+                    <p class="event-d">Friday, March 4th<br/>Seattle, Gage Academy of Art</p>
+                    <p class="event-p">Features original works by local emerging talent, as well as regionally and nationally celebrated artists. Guests enjoy a four-course feast, live entertainment, and live and silent auctions. Proceeds benefit educational programs for artists at Gage.</p>
+                </div>
+            </div></a>
+        
+           <a href="#"><div class="third-last tablet-half card">
+                <img class="event-img" src="img/upcoming-events/pratt-open-house.jpg" alt="Man painting"/>
+
+                <a href="#"><div class="add-button">
+                     <img src="img/icons/event-add-icon.svg" alt="add icon"/>            
+                    <p>Add to list</p>
+                </div></a>
+
+                <div class="event-info">
+                    <h3 class="event-d">Pratt Spring Open House</h3>
+                    <p class="event-d">Saturday, April 2nd<br/>Seattle, Pratt Fine Arts Center</p>
+                    <p class="event-p">A great way to learn about Pratt’s unique programs and meet instructors. This year the Open House takes place alongside the Jackson Street Jazz Walk. Enjoy great live music on Jackson Street and in our studios from 6:30 to 8:00 pm.</p>
+                </div>
+            </div></a>
+
+            <a href="#"><div class="tablet-only tablet-half-last card">
+                <img class="event-img" src="img/upcoming-events/leavenworth-art-park.jpg" alt="Leavnworth park"/>
+
+                <a href="#"><div class="add-button">
+                     <img src="img/icons/event-add-icon.svg" alt="add icon"/>            
+                    <p>Add to list</p>
+                </div></a>
+
+                <div class="event-info">
+                    <h3 class="event-d">Art in the Park</h3>
+                    <p class="event-d">May - Mid October<br/>Leavenworth Village</p>
+                    <p class="event-p">Featuring amateur and professional artists. The 2016 Season will begin May 1 and continue through October 18. Show hours are 9:00AM–6PM.</p>
+                </div>
+            </div></a>
+
+            <a href="#"><div class="third tablet-half card">
+                <img class="event-img" src="img/upcoming-events/yann-martel.jpg" alt="Event image 2"/>
+
+                <a href="#"><div class="add-button">
+                     <img src="img/icons/event-add-icon.svg" alt="add icon"/>            
+                    <p>Add to list</p>
+                </div></a>
+
+                <div class="event-info">
+                    <h3 class="event-d">Yann Martel Reading</h3>
+                    <p class="event-d">Thursday, February 11th<br/>Seattle Public Library Downtown</p>
+                    <p class="event-p">Yann Martel will read from "The High Mountains of Portugal": part quest, part ghost story, part contemporary fable. Doors open at 6:30pm, reading starts at 7:00pm. Free admission.</p>
+                </div>
+            </div><a href="#">
+            
+            <a href="#"><div class="third card tablet-half-last">
+                <img class="event-img" src="img/upcoming-events/bruce-lee.jpg" alt="Event image 2"/>
+
+                <a href="#"><div class="add-button">
+                     <img src="img/icons/event-add-icon.svg" alt="add icon"/>            
+                    <p>Add to list</p>
+                </div></a>
+
+                <div class="event-info">
+                    <h3 class="event-d">Bruce Lee Exhibit</h3>
+                    <p class="event-d">Now - September 4th<br/>Seattle, Wing Luke Museum</p>
+                    <p class="event-p">In 32 years of life, Bruce Lee became a global icon and changed the world. Get an up-close look at his story through this three-year exhibition and dig deeper into the significance of Bruce Lee and his impact during a time of racial stereotypes.</p>
+                </div>
+            </div></a>
+        
+           <a href="#"><div class="third-last tablet-half card">
+                <img class="event-img" src="img/upcoming-events/fife.jpg" alt="Event image 3"/>
+
+                <a href="#"><div class="add-button">
+                     <img src="img/icons/event-add-icon.svg" alt="add icon"/>            
+                    <p>Add to list</p>
+                </div></a>
+
+                <div class="event-info">
+                    <h3 class="event-d">Sculptures by Scott Fife</h3>
+                    <p class="event-d">2016 Ongoing exhibit<br/>Tacoma Art Museum</p>
+                    <p class="event-p">Fife’s art builds on the work of 1960s pop artists’ love of whimsy, irony and devotion to American culture, all of which are clear strengths in Fife’s sculpture. The artist’s recent portrait sculpture probes American life with wry wit and pointed social critique.</p>
+                </div>
+            </div></a>
+
+            <a href="#"><div class="tablet-only tablet-half-last card">
+                <img class="event-img" src="img/upcoming-events/stone-wave.jpg" alt="Event image 4"/>
+
+                <a href="#"><div class="add-button">
+                     <img src="img/icons/event-add-icon.svg" alt="add icon"/>            
+                    <p>Add to list</p>
+                </div></a>
+
+                <div class="event-info">
+                    <h3 class="event-d">Stone Wave</h3>
+                    <p class="event-d">2016 Ongoing exhibit<br/>Tacoma Art Museum</p>
+                    <p class="event-p">Stone Wave is located in the heart of the museum, made of 650 paver stones that are 500 years old. The stones come from a village slated to be engulfed by the Three Gorges Dam reservoir in China.</p>
+                </div>
+            </div></a>
+                
+            <a href="#"><div class="more-button button-upcoming">View more upcoming events</div></a>
+        </section>
+	
+		<div class="clear"></div>
+		
+		<footer class="row whole">
+            <div>
+                <div class="logo">
+                    <a href="index.html"><h1 class="hide-text">Art Guide Northwest</h1></a>
+                </div>
+                <div class="footer-links">
+                    <a href="#">Login</a>
+                    <a href="#">Contact Us</a>
+
+                    
+                    <div class="footer-social">
+                        <a href="#"><img class="social-icon" src="img/icons/twitter-icon.svg" alt="twitter"/></a>
+                        <a href="#"><img class="social-icon" src="img/icons/fb-icon.svg" alt="facebook"/></a>
+                    </div>
+                </div>
+
+                <div class="clear"></div>
+
+                <div class="footer-nav">
+                    <ul>
+                        <li><a href="art-events.html">Art Events</a></li>
+                        <li><a href="#">Directories</a></li>
+                        <li><a href="#">Art Maps</a></li>
+                        <li class="last"><a href="#">Blog</a></li>
+                    </ul>
+                </div>
+            </div>
+        </footer>
+	</body>
+</html>
